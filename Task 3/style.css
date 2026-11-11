@@ -1,0 +1,147 @@
+ {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    height: 124px;
+    padding: 20px 18px;
+    background-color: white;
+}
+
+.header img {
+    width: 110px;
+    height: 100px;
+    object-fit: contain;
+}
+.main-section {
+    margin: 0 18px;
+    min-height: 878px;
+    background-color: #913232;
+    display: grid;
+    grid-template-columns: 1fr 324px;
+    padding: 58px 86px 70px 82px;
+    gap: 40px;
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 89%,
+        90% 100%,
+        0 100%
+    );
+}
+.left-content {
+    display: flex;
+    align-items: center;
+}
+.information {
+    width: 100%;
+}
+
+.information h1 {
+    color: white;
+    font-size: 58px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+.information p {
+    color: #171010;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+}
+.information h2 {
+    color: #160c0c;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 27px;
+    margin-top: 12px;
+}
+.right-content {
+    width: 100%;
+}
+.right-content form > input {
+    width: 100%;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #d5c4c4;
+    padding: 10px;
+    margin-bottom: 9px;
+    color: white;
+    font-size: 11px;
+}
+.right-content form > input::placeholder {
+    color: white;
+}
+.right-content h2 {
+    color: black;
+    font-size: 20px;
+    margin: 7px 0 3px;
+}
+.instruction {
+    color: white;
+    font-size: 9px;
+    margin: 0 0 14px;
+}
+.award {
+    margin-bottom: 9px;
+}
+.award label {
+    display: block;
+    color: white;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+.award label input {
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+    accent-color: white;
+}
+.award textarea {
+    width: 100%;
+    height: 58px;
+    background-color: transparent;
+    border: 2px solid #d5c4c4;
+    padding: 7px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    resize: none;
+}
+.award textarea::placeholder {
+    color: white;
+}
+.submit-button {
+    width: 92%;
+    height: 40px;
+    margin-top: 22px;
+    background-color: white;
+    border: none;
+    color: #444;
+    font-size: 19px;
+    cursor: pointer;
+}
+ {
+
+    .main-section {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+        gap: 35px;
+        clip-path: none;
+    }
+
+    .information h1 {
+        font-size: 42px;
+    }
+
+    .right-content {
+        max-width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
